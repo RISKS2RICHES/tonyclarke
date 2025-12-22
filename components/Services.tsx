@@ -5,12 +5,12 @@ import { ServiceItem } from '../types';
 const services: ServiceItem[] = [
   {
     title: "Covert Surveillance",
-    description: "Expert intelligence gathering utilizing Police/Army techniques. Proven track record in uncovering theft, fraud, and criminal activities.",
+    description: "Expert intelligence gathering utilising Police/Army techniques. Proven track record in uncovering theft, fraud, and criminal activities.",
     icon: Eye
   },
   {
     title: "Government Advisory",
-    description: "Former Strategic advisor to the Home Office and international bodies on security legislation, licensing, and regulation.",
+    description: "Former Strategic adviser to the Home Office and international bodies on security legislation, licensing, and regulation.",
     icon: Building2
   },
   {

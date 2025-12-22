@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="bg-white pt-12 pb-10 md:pt-16 md:pb-16">
+    <div className="bg-white pt-2 pb-10 md:pt-10 md:pb-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-12">
           
@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Image Content */}
-          <div className="md:w-2/5 flex justify-center md:justify-center order-1 md:order-2 mt-4 md:mt-0">
+          <div className="md:w-2/5 flex justify-center md:justify-center order-1 md:order-2 mt-2 md:mt-0">
             <div className="relative">
               {/* Decorative elements behind image */}
               <div className="absolute -inset-3 bg-navy-100 rounded-full blur-lg opacity-50"></div>

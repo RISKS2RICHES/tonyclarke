@@ -50,7 +50,7 @@ const ExpertisePage: React.FC<ExpertisePageProps> = ({ onNavigate }) => {
               <ul className="space-y-3 md:space-y-4">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-navy-900 mt-2 mr-3 flex-shrink-0"></span>
-                  <p className="text-xs md:text-sm text-navy-800 font-bold">Counter-Terrorism & Organized Crime</p>
+                  <p className="text-xs md:text-sm text-navy-800 font-bold">Counter-Terrorism & Organised Crime</p>
                 </li>
                 <li className="pl-5 text-xs md:text-sm text-navy-600">
                   Tasks ranged from tailing suspected Provisional IRA agents to donning camouflage to watch isolated houses used by armed robbers.
@@ -202,7 +202,7 @@ const ExpertisePage: React.FC<ExpertisePageProps> = ({ onNavigate }) => {
               Secure The Expertise
             </h2>
             <p className="text-navy-200 mb-6 md:mb-8 max-w-2xl mx-auto font-medium text-sm md:text-base">
-              Tony Clarke brings decades of high-level intelligence, strategic risk management, and operational security experience to your organization.
+              Tony Clarke brings decades of high-level intelligence, strategic risk management, and operational security experience to your organisation.
             </p>
             <button 
               onClick={() => onNavigate('contact')}

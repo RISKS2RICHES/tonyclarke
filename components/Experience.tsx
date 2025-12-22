@@ -16,7 +16,7 @@ const timeline: TimelineItem[] = [
   },
   {
     year: "2009-2014",
-    title: "Strategic Advisor",
+    title: "Strategic Adviser",
     organization: "SIA & Home Office",
     description: "Panel member appointing SIA Chairperson. Advised Home Office on Vulnerable Women safety."
   },
@@ -24,7 +24,7 @@ const timeline: TimelineItem[] = [
     year: "Post-Police",
     title: "Private Detective",
     organization: "Independent",
-    description: "Specialized in licensed trade fraud. Prosecuted managers for large-scale theft. Provided CP for celebrities."
+    description: "Specialised in licensed trade fraud. Prosecuted managers for large-scale theft. Provided CP for celebrities."
   },
   {
     year: "1980s",
