@@ -1,32 +1,47 @@
 import React from 'react';
+import { Users, Globe, ShieldCheck } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-10 md:py-12 bg-navy-50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-6 md:mb-8">
-          <h2 className="text-navy-900 text-xs md:text-sm font-black tracking-widest uppercase mb-2 border-b-4 border-navy-900 inline-block pb-1">The Professional</h2>
+    <section id="about" className="py-10 md:py-16 bg-navy-50">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div className="text-center mb-8">
+          <h2 className="text-navy-900 text-xs font-black tracking-widest uppercase mb-2">The Consultancy</h2>
+          <h3 className="text-2xl md:text-4xl font-black text-navy-900 uppercase tracking-tighter mb-4">
+            80 Years of <br className="hidden md:block" />Combined Excellence
+          </h3>
+          <p className="max-w-3xl mx-auto text-navy-700 text-sm md:text-lg font-medium leading-relaxed">
+            Mark Burtonwood and Tony Clarke bring together over eight decades of experience in high-level law enforcement and private security. From leading major policing responses to shaping national security legislation, we provide unparalleled insight into public safety.
+          </p>
         </div>
 
-        <div className="space-y-5 md:space-y-6 text-navy-800 font-medium">
-          <p className="text-sm sm:text-base md:text-xl font-bold leading-relaxed">
-            Tony Clarke’s career is defined by resilience and professional excellence. Joining the Metropolitan Police Service, he was the first black officer assigned to Harlesden Police Station. His operational effectiveness led to early promotion and assignment to the elite Criminal Intelligence Surveillance Unit at New Scotland Yard, becoming the first black male detective in its history.
-          </p>
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 pt-2 md:pt-4">
-            <div>
-              <h3 className="text-navy-900 font-black uppercase mb-2 md:mb-3 text-xs md:text-sm tracking-wide">Surveillance Expertise</h3>
-              <p className="text-navy-700 text-xs sm:text-sm leading-relaxed">
-                Trained by Police and Army instructors, Tony mastered covert surveillance techniques. His assignments ranged from tracking Provisional IRA agents to apprehending armed robbers. He operated with iron discipline in high-stakes environments, describing this era as requiring absolute vigilance.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-navy-900 font-black uppercase mb-2 md:mb-3 text-xs md:text-sm tracking-wide">Strategic Impact</h3>
-              <p className="text-navy-700 text-xs sm:text-sm leading-relaxed">
-                Transitioning to the private sector, Tony applied his rigorous training to expose corruption in the night-time economy and advise on global security policy. He has advised the Malaysian Government, the UK Home Office, and major financial institutions on risk mitigation and legislation.
-              </p>
-            </div>
+        <div className="grid md:grid-cols-3 gap-4 md:gap-6 mt-8">
+          <div className="bg-white p-6 border-t-4 border-navy-900 shadow-sm">
+            <Users className="w-8 h-8 text-navy-900 mb-3" />
+            <h4 className="text-lg font-black text-navy-900 uppercase mb-2">Public & Private Synergy</h4>
+            <p className="text-navy-700 text-xs md:text-sm leading-relaxed">
+              We possess unique insights from multiple perspectives, bridging the gap between regulatory bodies and operational reality.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 border-t-4 border-navy-900 shadow-sm">
+            <ShieldCheck className="w-8 h-8 text-navy-900 mb-3" />
+            <h4 className="text-lg font-black text-navy-900 uppercase mb-2">Strategic Reform</h4>
+            <p className="text-navy-700 text-xs md:text-sm leading-relaxed">
+              Contributing significantly to public safety strategies and capacity-building programs that enhance protection nationally.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 border-t-4 border-navy-900 shadow-sm">
+            <Globe className="w-8 h-8 text-navy-900 mb-3" />
+            <h4 className="text-lg font-black text-navy-900 uppercase mb-2">International Reach</h4>
+            <p className="text-navy-700 text-xs md:text-sm leading-relaxed">
+              Available to provide expertise globally. We understand diverse stakeholders and deliver security solutions across borders.
+            </p>
           </div>
         </div>
+
       </div>
     </section>
   );

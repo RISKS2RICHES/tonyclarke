@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Leadership from './components/Leadership';
+import Values from './components/Values';
 import Services from './components/Services';
-import Experience from './components/Experience';
 import Achievements from './components/Achievements';
+import Partnerships from './components/Partnerships';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ExpertisePage from './components/ExpertisePage';
@@ -39,9 +41,11 @@ function App() {
           <>
             <Hero />
             <About />
+            <Leadership />
+            <Values />
             <Services />
-            <Experience />
             <Achievements />
+            <Partnerships />
           </>
         )}
         
