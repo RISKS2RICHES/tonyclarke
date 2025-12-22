@@ -42,8 +42,8 @@ function App() {
             <Hero />
             <About />
             <Leadership />
-            <Values />
             <Services />
+            <Values />
             <Achievements />
             <Partnerships />
           </>

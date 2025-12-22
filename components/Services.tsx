@@ -157,15 +157,13 @@ const Services: React.FC = () => {
       points: [
         "Professional Emergency Response",
         "Major Incident identification",
-        "Qualified commander experience",
-        "Coordination of 800+ officers",
-        "Critical & firearms command"
+        "Qualified commander experience"
       ]
     }
   ];
 
   return (
-    <section id="services" className="py-10 md:py-16 bg-white">
+    <section id="services" className="py-10 md:py-16 bg-navy-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 text-center">
           <h2 className="text-navy-900 text-xs font-black tracking-widest uppercase mb-2">Our Expertise</h2>
@@ -180,24 +178,28 @@ const Services: React.FC = () => {
               <div 
                 key={index}
                 className={`group bg-white border border-navy-100 p-4 hover:border-navy-900 transition-all duration-300 hover:shadow-md flex flex-col ${
-                  isLast ? 'sm:col-span-2 lg:col-span-3 items-center text-center py-6 md:py-8' : ''
+                  isLast ? 'sm:col-span-2 lg:col-span-3 sm:items-center sm:text-center sm:py-8' : ''
                 }`}
               >
-                <div className={`flex items-center mb-3 ${isLast ? 'flex-col mb-6' : ''}`}>
+                <div className={`flex items-center mb-3 ${isLast ? 'sm:flex-col sm:mb-6' : ''}`}>
                   <div className="p-2 bg-navy-50 group-hover:bg-navy-900 transition-colors duration-300">
                     <service.icon className="h-5 w-5 text-navy-900 group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <div className={isLast ? 'mt-3 ml-0' : 'ml-3'}>
+                  <div className={isLast ? 'ml-3 sm:mt-3 sm:ml-0' : 'ml-3'}>
                     <h4 className="text-sm md:text-base font-black text-navy-900 uppercase leading-none">{service.title}</h4>
                     <p className="text-[10px] font-bold text-navy-500 uppercase mt-0.5">{service.headline}</p>
                   </div>
                 </div>
                 
-                <ul className={`${isLast ? 'flex flex-wrap justify-center gap-x-6 gap-y-3' : 'space-y-1.5 flex-grow'}`}>
+                <ul className={`${isLast ? 'space-y-1.5 sm:space-y-0 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-6 sm:gap-y-3' : 'space-y-1.5 flex-grow'}`}>
                   {service.points.map((point, i) => (
-                    <li key={i} className={`text-[11px] md:text-xs text-navy-700 font-medium flex ${isLast ? 'items-center bg-navy-50 px-3 py-1.5 rounded-full border border-navy-100' : 'items-start'}`}>
-                      <span className={`${isLast ? 'hidden' : 'mr-1.5 text-navy-300'}`}>•</span>
-                      {isLast && <span className="w-1.5 h-1.5 rounded-full bg-navy-400 mr-2"></span>}
+                    <li key={i} className={`text-[11px] md:text-xs text-navy-700 font-medium flex ${isLast ? 'items-start sm:items-center sm:bg-navy-50 sm:px-3 sm:py-1.5 sm:rounded-full sm:border sm:border-navy-100' : 'items-start'}`}>
+                      {/* Bullet for standard list (always for non-last, and for last on mobile) */}
+                      <span className={`${isLast ? 'mr-1.5 text-navy-300 sm:hidden' : 'mr-1.5 text-navy-300'}`}>•</span>
+                      
+                      {/* Dot for pill view (only for last on non-mobile) */}
+                      {isLast && <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-navy-400 mr-2"></span>}
+                      
                       {point}
                     </li>
                   ))}
