@@ -56,9 +56,9 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
               <h4 className="text-lg font-black text-navy-900 uppercase mb-0.5">Tony Clarke</h4>
               <p className="text-[10px] font-bold text-navy-500 uppercase tracking-wider mb-3">Security Specialist</p>
               <div className="space-y-2">
-                <a href="mailto:tony.clarke@candorfm.com" className="flex items-center text-navy-700 hover:text-navy-900 font-bold transition-colors text-xs md:text-sm">
+                <a href="mailto:tony@tonyclarke.london" className="flex items-center text-navy-700 hover:text-navy-900 font-bold transition-colors text-xs md:text-sm">
                   <Mail className="w-4 h-4 mr-2 text-navy-400" />
-                  tony.clarke@candorfm.com
+                  tony@tonyclarke.london
                 </a>
                 <a href="tel:+447920014100" className="flex items-center text-navy-700 hover:text-navy-900 font-bold transition-colors text-xs md:text-sm">
                   <Phone className="w-4 h-4 mr-2 text-navy-400" />
