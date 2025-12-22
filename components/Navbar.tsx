@@ -19,22 +19,22 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 border-b ${
-        scrolled ? 'bg-white/95 backdrop-blur-md border-navy-100 py-3 shadow-sm' : 'bg-white border-transparent py-5'
+        scrolled ? 'bg-white/95 backdrop-blur-md border-navy-100 py-3 shadow-sm' : 'bg-white border-transparent py-4 md:py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center gap-2">
           <button 
             onClick={() => onNavigate('home')}
-            className="flex items-center group focus:outline-none"
+            className="flex items-center group focus:outline-none shrink-0"
           >
-            <ShieldCheck className="h-7 w-7 text-navy-900 mr-2 group-hover:text-navy-700 transition-colors" />
-            <span className="text-xl font-extrabold tracking-tight text-navy-900 uppercase group-hover:text-navy-700 transition-colors">
+            <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 text-navy-900 mr-1.5 md:mr-2 group-hover:text-navy-700 transition-colors" />
+            <span className="text-sm sm:text-lg md:text-xl font-extrabold tracking-tight text-navy-900 uppercase group-hover:text-navy-700 transition-colors whitespace-nowrap">
               Tony Clarke
             </span>
           </button>
           
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-2 md:space-x-6">
             <button
                onClick={() => onNavigate('expertise')}
                className="hidden md:block text-sm font-bold text-navy-700 hover:text-navy-900 uppercase tracking-wider transition-colors"
@@ -43,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
             </button>
             <button 
               onClick={() => onNavigate('contact')}
-              className="px-6 py-2 text-sm font-black text-white bg-navy-900 hover:bg-navy-800 transition-colors uppercase tracking-widest border-2 border-transparent cursor-pointer"
+              className="px-3 py-2 sm:px-4 md:px-6 text-[10px] sm:text-xs md:text-sm font-black text-white bg-navy-900 hover:bg-navy-800 transition-colors uppercase tracking-widest border-2 border-transparent cursor-pointer whitespace-nowrap"
             >
               Get In Touch
             </button>
