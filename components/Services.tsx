@@ -37,23 +37,23 @@ const services: ServiceItem[] = [
 
 const Services: React.FC = () => {
   return (
-    <section id="expertise" className="py-12 bg-white">
+    <section id="expertise" className="py-10 md:py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-10 border-b-2 border-navy-100 pb-4">
-          <h2 className="text-navy-900 text-3xl font-black uppercase tracking-tight">Core Competencies</h2>
+        <div className="mb-8 md:mb-10 border-b-2 border-navy-100 pb-3 md:pb-4">
+          <h2 className="text-navy-900 text-2xl md:text-3xl font-black uppercase tracking-tight">Core Competencies</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="p-6 bg-white border-2 border-navy-100 hover:border-navy-900 transition-colors duration-200"
+              className="p-5 md:p-6 bg-white border-2 border-navy-100 hover:border-navy-900 transition-colors duration-200"
             >
-              <div className="mb-4 flex items-center">
-                <service.icon className="h-5 w-5 text-navy-900 mr-3" />
-                <h4 className="text-lg font-extrabold text-navy-900 uppercase tracking-tight">{service.title}</h4>
+              <div className="mb-3 md:mb-4 flex items-center">
+                <service.icon className="h-4 w-4 md:h-5 md:w-5 text-navy-900 mr-3" />
+                <h4 className="text-base md:text-lg font-extrabold text-navy-900 uppercase tracking-tight">{service.title}</h4>
               </div>
-              <p className="text-navy-700 text-sm font-semibold leading-relaxed">
+              <p className="text-navy-700 text-xs md:text-sm font-semibold leading-relaxed">
                 {service.description}
               </p>
             </div>
