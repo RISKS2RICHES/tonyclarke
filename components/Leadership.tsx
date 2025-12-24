@@ -2,19 +2,6 @@ import React, { useState } from 'react';
 import { Award, BookOpen, Star, Briefcase, Network, Shield } from 'lucide-react';
 
 const Leadership: React.FC = () => {
-  // Image handling for Mark
-  const [markImageSrc, setMarkImageSrc] = useState('https://i.postimg.cc/G9vF0Bf9/mark.jpg');
-  const [markRetryCount, setMarkRetryCount] = useState(0);
-
-  const handleMarkImageError = () => {
-    if (markRetryCount === 0) {
-      setMarkImageSrc('https://i.postimg.cc/G9vF0Bf9/image.jpg');
-      setMarkRetryCount(1);
-    } else {
-      setMarkImageSrc('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800');
-    }
-  };
-
   // Image handling for Tony
   const [tonyImageSrc, setTonyImageSrc] = useState('https://i.postimg.cc/cKvPYhF5/tony.jpg');
   const [tonyRetryCount, setTonyRetryCount] = useState(0);
@@ -41,61 +28,19 @@ const Leadership: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-10">
+        <div className="flex justify-center">
           
-          {/* Mark Burtonwood Profile */}
-          <div className="bg-white border border-navy-100 hover:border-navy-200 p-6 md:p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
-             <div className="flex flex-col sm:flex-row gap-6 items-start">
-               {/* Image Column */}
-               <div className="shrink-0 relative mx-auto sm:mx-0">
-                 <div className="w-32 h-32 md:w-36 md:h-36 rounded-lg overflow-hidden border-2 border-navy-900 shadow-md relative z-10">
-                   <img 
-                    src={markImageSrc}
-                    onError={handleMarkImageError}
-                    alt="Mark Burtonwood" 
-                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
-                   />
-                 </div>
-                 <div className="absolute -bottom-3 -right-3 z-20 bg-navy-900 text-white p-2 rounded-full shadow-lg border-2 border-white">
-                    <Shield className="w-4 h-4" />
-                 </div>
-               </div>
-               
-               {/* Text Column */}
-               <div className="flex-grow text-center sm:text-left">
-                 <h3 className="text-xl md:text-2xl font-black text-navy-900 uppercase leading-none mb-1">Mark Burtonwood</h3>
-                 <p className="text-navy-500 font-bold uppercase tracking-widest text-[10px] md:text-xs mb-3">Chartered Security Professional</p>
-                 <p className="text-navy-700 text-xs md:text-sm font-medium leading-relaxed mb-4">
-                   A recognised international SME supporting capability-building programs globally. One of only ~300 Chartered Security Professionals worldwide.
-                 </p>
-                 
-                 <div className="grid grid-cols-1 gap-2">
-                   <div className="bg-navy-50 px-3 py-2 rounded-md border-l-2 border-navy-900">
-                     <p className="text-[10px] font-bold text-navy-900 uppercase flex items-center justify-center sm:justify-start">
-                       <Briefcase className="w-3 h-3 mr-1.5" /> Policing Career (30+ Years)
-                     </p>
-                   </div>
-                   <div className="bg-navy-50 px-3 py-2 rounded-md border-l-2 border-navy-900">
-                     <p className="text-[10px] font-bold text-navy-900 uppercase flex items-center justify-center sm:justify-start">
-                       <BookOpen className="w-3 h-3 mr-1.5" /> MA & PG Cert Counter Terrorism
-                     </p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-
           {/* Tony Clarke Profile */}
-          <div className="bg-white border border-navy-100 hover:border-navy-200 p-6 md:p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
-             <div className="flex flex-col sm:flex-row gap-6 items-start">
+          <div className="bg-white border border-navy-100 hover:border-navy-200 p-6 md:p-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 max-w-4xl w-full">
+             <div className="flex flex-col sm:flex-row gap-8 items-start">
                {/* Image Column */}
                <div className="shrink-0 relative mx-auto sm:mx-0">
-                 <div className="w-32 h-32 md:w-36 md:h-36 rounded-lg overflow-hidden border-2 border-navy-900 shadow-md relative z-10">
+                 <div className="w-32 h-32 md:w-48 md:h-48 rounded-lg overflow-hidden border-2 border-navy-900 shadow-md relative z-10">
                    <img 
                     src={tonyImageSrc}
                     onError={handleTonyImageError}
                     alt="Tony Clarke" 
-                    className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover object-top transition-all duration-500 grayscale hover:grayscale-0"
                    />
                  </div>
                  <div className="absolute -bottom-3 -right-3 z-20 bg-navy-900 text-white p-2 rounded-full shadow-lg border-2 border-white">
@@ -105,21 +50,21 @@ const Leadership: React.FC = () => {
                
                {/* Text Column */}
                <div className="flex-grow text-center sm:text-left">
-                 <h3 className="text-xl md:text-2xl font-black text-navy-900 uppercase leading-none mb-1">Tony Clarke</h3>
-                 <p className="text-navy-500 font-bold uppercase tracking-widest text-[10px] md:text-xs mb-3">Security Specialist</p>
-                 <p className="text-navy-700 text-xs md:text-sm font-medium leading-relaxed mb-4">
+                 <h3 className="text-2xl md:text-3xl font-black text-navy-900 uppercase leading-none mb-1">Tony Clarke</h3>
+                 <p className="text-navy-500 font-bold uppercase tracking-widest text-xs md:text-sm mb-4">Independent Strategic Security Specialist</p>
+                 <p className="text-navy-700 text-sm md:text-base font-medium leading-relaxed mb-6">
                    Former New Scotland Yard Criminal Intelligence Surveillance Unit. A key contributor to UK private security regulation and government legislation.
                  </p>
                  
-                 <div className="grid grid-cols-1 gap-2">
-                   <div className="bg-navy-50 px-3 py-2 rounded-md border-l-2 border-navy-900">
-                     <p className="text-[10px] font-bold text-navy-900 uppercase flex items-center justify-center sm:justify-start">
-                       <Award className="w-3 h-3 mr-1.5" /> First Black Detective (CISU)
+                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                   <div className="bg-navy-50 px-4 py-3 rounded-md border-l-2 border-navy-900">
+                     <p className="text-xs font-bold text-navy-900 uppercase flex items-center justify-center sm:justify-start">
+                       <Award className="w-4 h-4 mr-2" /> First Black Detective (CISU)
                      </p>
                    </div>
-                   <div className="bg-navy-50 px-3 py-2 rounded-md border-l-2 border-navy-900">
-                     <p className="text-[10px] font-bold text-navy-900 uppercase flex items-center justify-center sm:justify-start">
-                       <Briefcase className="w-3 h-3 mr-1.5" /> Former Home Office Adviser
+                   <div className="bg-navy-50 px-4 py-3 rounded-md border-l-2 border-navy-900">
+                     <p className="text-xs font-bold text-navy-900 uppercase flex items-center justify-center sm:justify-start">
+                       <Briefcase className="w-4 h-4 mr-2" /> Former Home Office Adviser
                      </p>
                    </div>
                  </div>
@@ -168,8 +113,8 @@ const Leadership: React.FC = () => {
                    <span className="block font-bold text-white text-xs md:text-sm">Forensic Experts</span>
                  </div>
                  <div className="bg-navy-800/50 p-4 rounded border border-navy-700 backdrop-blur-sm">
-                   <span className="block font-bold uppercase text-[9px] tracking-widest mb-1 text-navy-400">Training</span>
-                   <span className="block font-bold text-white text-xs md:text-sm">SIA Qualified</span>
+                   <span className="block font-bold uppercase text-[9px] tracking-widest mb-1 text-navy-400">Operational</span>
+                   <span className="block font-bold text-white text-xs md:text-sm">Investigations/ Security consultancy</span>
                  </div>
               </div>
             </div>

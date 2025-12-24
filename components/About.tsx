@@ -9,10 +9,10 @@ const About: React.FC = () => {
         <div className="text-center mb-8">
           <h2 className="text-navy-900 text-xs font-black tracking-widest uppercase mb-2">The Consultancy</h2>
           <h3 className="text-2xl md:text-4xl font-black text-navy-900 uppercase tracking-tighter mb-4">
-            80 Years of <br className="hidden md:block" />Combined Excellence
+            45 Years of <br className="hidden md:block" />Excellence
           </h3>
           <p className="max-w-3xl mx-auto text-navy-700 text-sm md:text-lg font-medium leading-relaxed">
-            Mark Burtonwood and Tony Clarke bring together over eight decades of experience in high-level law enforcement and private security. From leading major policing responses to shaping national security legislation, we provide unparalleled insight into public safety.
+            Tony Clarke brings over four decades of experience in high-level law enforcement and the private security sector. From leading significant policing responses to shaping the UK national security legislation, he provides unparalleled insight into public safety and investigations.
           </p>
         </div>
 

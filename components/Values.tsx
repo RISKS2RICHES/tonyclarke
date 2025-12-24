@@ -30,7 +30,7 @@ const Values: React.FC = () => {
         <div className="text-center mb-8">
           <h3 className="text-2xl font-black text-navy-900 uppercase tracking-tight mb-3">Our Core Values</h3>
           <p className="max-w-xl mx-auto text-navy-600 text-sm font-medium">
-            Our staff drives the success of our business. Our culture drives the success of our staff. Our values drive our culture.
+            Our staff drives our business’s success. Our culture drives our staff’s success. Our values drive our culture.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const Values: React.FC = () => {
             <h4 className="font-black text-navy-900 uppercase mb-1 text-sm">Innovation</h4>
             <p className="text-xs text-navy-600">Creative collaboration and solution-oriented thinking.</p>
           </div>
-          <div className="bg-white p-5 border border-navy-100 shadow-sm sm:col-span-2 lg:col-span-3 lg:w-1/3 lg:mx-auto">
+          <div className="bg-white p-5 border border-navy-100 shadow-sm sm:col-span-2 lg:col-span-3 lg:w-1/3 lg:mx-auto lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center">
             <Eye className="w-6 h-6 text-navy-900 mb-2" />
             <h4 className="font-black text-navy-900 uppercase mb-1 text-sm">Transparency</h4>
             <p className="text-xs text-navy-600">Operating with openness and honest assessments.</p>

@@ -35,22 +35,6 @@ const Contact: React.FC<ContactProps> = ({ onNavigate }) => {
           {/* Direct Contacts */}
           <div className="space-y-4">
             
-            {/* Mark */}
-            <div className="bg-white p-5 border-l-4 border-navy-900 shadow-sm">
-              <h4 className="text-lg font-black text-navy-900 uppercase mb-0.5">Mark Burtonwood</h4>
-              <p className="text-[10px] font-bold text-navy-500 uppercase tracking-wider mb-3">Chartered Security Professional</p>
-              <div className="space-y-2">
-                <a href="mailto:mark.burtonwood@oti-consulting.co.uk" className="flex items-center text-navy-700 hover:text-navy-900 font-bold transition-colors text-xs md:text-sm">
-                  <Mail className="w-4 h-4 mr-2 text-navy-400" />
-                  mark.burtonwood@oti-consulting.co.uk
-                </a>
-                <a href="tel:+447848146262" className="flex items-center text-navy-700 hover:text-navy-900 font-bold transition-colors text-xs md:text-sm">
-                  <Phone className="w-4 h-4 mr-2 text-navy-400" />
-                  +44 7848 146 262
-                </a>
-              </div>
-            </div>
-
             {/* Tony */}
             <div className="bg-white p-5 border-l-4 border-navy-900 shadow-sm">
               <h4 className="text-lg font-black text-navy-900 uppercase mb-0.5">Tony Clarke</h4>

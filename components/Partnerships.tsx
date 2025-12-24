@@ -144,19 +144,7 @@ const Partnerships: React.FC = () => {
   const allPartners = [...partners, ...partners];
 
   return (
-    <section className="py-12 md:py-16 bg-white border-t border-navy-100 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
-        <h2 className="text-navy-900 text-xs font-black tracking-widest uppercase mb-2">
-          Professional Affiliations & Partnerships
-        </h2>
-        <h3 className="text-2xl md:text-3xl font-black text-navy-900 uppercase tracking-tight">
-          Trusted By Leading Organisations
-        </h3>
-        <p className="mt-3 max-w-2xl mx-auto text-navy-600 text-sm font-medium">
-          Over 40 years of partnerships with government bodies, law enforcement, and industry leaders across security and hospitality sectors.
-        </p>
-      </div>
-
+    <section className="py-10 bg-white border-t border-navy-100 overflow-hidden">
       <div className="relative w-full">
         <div className="flex w-max animate-scroll">
           {allPartners.map((partner, index) => (
@@ -172,14 +160,6 @@ const Partnerships: React.FC = () => {
         {/* Gradients to fade edges */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent z-10"></div>
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent z-10"></div>
-      </div>
-
-      <div className="text-center mt-12">
-        <div className="inline-flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] font-bold text-navy-400 uppercase tracking-widest">
-           <span className="flex items-center"><span className="w-1.5 h-1.5 bg-navy-300 rounded-full mr-2"></span>Home Office Recognised</span>
-           <span className="flex items-center"><span className="w-1.5 h-1.5 bg-navy-300 rounded-full mr-2"></span>SIA Approved Trainer</span>
-           <span className="flex items-center"><span className="w-1.5 h-1.5 bg-navy-300 rounded-full mr-2"></span>BSI Standards Committee</span>
-        </div>
       </div>
     </section>
   );

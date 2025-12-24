@@ -1,7 +1,7 @@
 import React from 'react';
 import { 
   Calendar, Search, GraduationCap, UserCheck, ShieldAlert, 
-  Briefcase, Moon, Lock, BarChart, FileText, Map, Gavel, Siren 
+  Briefcase, Moon, Lock, BarChart, FileText, Map, Siren 
 } from 'lucide-react';
 
 const Services: React.FC = () => {
@@ -115,15 +115,15 @@ const Services: React.FC = () => {
       ]
     },
     {
-      title: "Terrorism Bill",
+      title: "Terrorism protection of Premises Bill",
       headline: "Protection of Premises",
       icon: FileText,
       points: [
-        "'Martyn's Law' compliance",
-        "PG Qual in CT Risk Management",
-        "Risk assessment strategies",
-        "Tiered approach implementation",
-        "Preparedness programs"
+        "Risk Assessments",
+        "Action Plans",
+        "Staff Training",
+        "Business continuity Plan",
+        "Assessing the threat (evacuation/invacuation)"
       ]
     },
     {
@@ -136,18 +136,6 @@ const Services: React.FC = () => {
         "Create 24-hour cities",
         "Support for business/workers",
         "Develop vibrant culture"
-      ]
-    },
-    {
-      title: "Private Prosecutions",
-      headline: "Criminal Prosecution",
-      icon: Gavel,
-      points: [
-        "Initiate private prosecutions",
-        "Comprehensive evidence gathering",
-        "Legal partner review",
-        "Trial through courts",
-        "Professional standards"
       ]
     },
     {
@@ -172,34 +160,25 @@ const Services: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
           {servicesList.map((service, index) => {
-            const isLast = index === servicesList.length - 1;
-            
             return (
               <div 
                 key={index}
-                className={`group bg-white border border-navy-100 p-4 hover:border-navy-900 transition-all duration-300 hover:shadow-md flex flex-col ${
-                  isLast ? 'sm:col-span-2 lg:col-span-3 sm:items-center sm:text-center sm:py-8' : ''
-                }`}
+                className="group bg-white border border-navy-100 p-4 hover:border-navy-900 transition-all duration-300 hover:shadow-md flex flex-col"
               >
-                <div className={`flex items-center mb-3 ${isLast ? 'sm:flex-col sm:mb-6' : ''}`}>
+                <div className="flex items-center mb-3">
                   <div className="p-2 bg-navy-50 group-hover:bg-navy-900 transition-colors duration-300">
                     <service.icon className="h-5 w-5 text-navy-900 group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <div className={isLast ? 'ml-3 sm:mt-3 sm:ml-0' : 'ml-3'}>
+                  <div className="ml-3">
                     <h4 className="text-sm md:text-base font-black text-navy-900 uppercase leading-none">{service.title}</h4>
                     <p className="text-[10px] font-bold text-navy-500 uppercase mt-0.5">{service.headline}</p>
                   </div>
                 </div>
                 
-                <ul className={`${isLast ? 'space-y-1.5 sm:space-y-0 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-6 sm:gap-y-3' : 'space-y-1.5 flex-grow'}`}>
+                <ul className="space-y-1.5 flex-grow">
                   {service.points.map((point, i) => (
-                    <li key={i} className={`text-[11px] md:text-xs text-navy-700 font-medium flex ${isLast ? 'items-start sm:items-center sm:bg-navy-50 sm:px-3 sm:py-1.5 sm:rounded-full sm:border sm:border-navy-100' : 'items-start'}`}>
-                      {/* Bullet for standard list (always for non-last, and for last on mobile) */}
-                      <span className={`${isLast ? 'mr-1.5 text-navy-300 sm:hidden' : 'mr-1.5 text-navy-300'}`}>•</span>
-                      
-                      {/* Dot for pill view (only for last on non-mobile) */}
-                      {isLast && <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-navy-400 mr-2"></span>}
-                      
+                    <li key={i} className="text-[11px] md:text-xs text-navy-700 font-medium flex items-start">
+                      <span className="mr-1.5 text-navy-300">•</span>
                       {point}
                     </li>
                   ))}

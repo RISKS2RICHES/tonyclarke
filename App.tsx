@@ -6,7 +6,6 @@ import Leadership from './components/Leadership';
 import Values from './components/Values';
 import Services from './components/Services';
 import Achievements from './components/Achievements';
-import Partnerships from './components/Partnerships';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ExpertisePage from './components/ExpertisePage';
@@ -45,7 +44,6 @@ function App() {
             <Services />
             <Values />
             <Achievements />
-            <Partnerships />
           </>
         )}
         

@@ -13,7 +13,7 @@ const Achievements: React.FC = () => {
           
           <div className="bg-white border-2 border-navy-900 p-4 md:p-5">
             <div className="flex justify-between items-start mb-2">
-              <h4 className="text-base md:text-lg font-black text-navy-900 uppercase">Operation Joseph</h4>
+              <h4 className="text-base md:text-lg font-black text-navy-900 uppercase">Fighting Corruption at the highest level</h4>
               <Star className="w-5 h-5 text-navy-900" />
             </div>
             <p className="text-navy-800 text-xs font-bold mb-1">
@@ -52,14 +52,14 @@ const Achievements: React.FC = () => {
 
           <div className="bg-white border-2 border-navy-900 p-4 md:p-5">
             <div className="flex justify-between items-start mb-2">
-              <h4 className="text-base md:text-lg font-black text-navy-900 uppercase">High Profile</h4>
+              <h4 className="text-base md:text-lg font-black text-navy-900 uppercase">Fighting gun crime</h4>
               <Award className="w-5 h-5 text-navy-900" />
             </div>
             <p className="text-navy-800 text-xs font-bold mb-1">
-              Media & Culture
+              Community Action
             </p>
             <p className="text-navy-600 text-xs font-medium leading-relaxed">
-              Appeared in "London Boulevard". Provided Close Protection for Courtney Love and Sade. Endorsed by London Drug Policy Forum.
+              Teamed up with Baroness Sandy Verma – Conservative member of the House of Lords, Sir Peter Soulsby – Leicester City Mayor, and Mark Morrison – Singer to combat knife crime in Leicester.
             </p>
           </div>
 

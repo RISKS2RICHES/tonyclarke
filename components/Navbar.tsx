@@ -52,12 +52,6 @@ const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
               About
             </button>
             <button
-               onClick={() => scrollToSection('leadership')}
-               className="hidden md:block px-3 py-2 text-xs font-bold text-navy-700 hover:text-navy-900 uppercase tracking-wider transition-colors"
-            >
-              Our Team
-            </button>
-            <button
                onClick={() => scrollToSection('services')}
                className="hidden md:block px-3 py-2 text-xs font-bold text-navy-700 hover:text-navy-900 uppercase tracking-wider transition-colors"
             >
